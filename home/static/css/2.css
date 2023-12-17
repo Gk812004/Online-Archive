@@ -1,0 +1,147 @@
+
+* {
+  margin:0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  /* background-image: url(3.jpg); */
+  /* background-image: url(4.jpg); */
+  /* background-size: cover; */
+  background-size: cover;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* .wrp{
+background-color: #1f1d1a;
+color: blanchedalmond;
+background-size: cover;
+} */
+
+.header{
+ background-color: #1f241b;
+ color: blanchedalmond;
+background-size: cover;
+/* float: left;
+width: 80%; */
+}
+/* .usern{
+float: right;
+} */
+
+
+#pdf-buttons {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+#pdf-list {
+  margin-left: 20px;
+}
+
+
+#pdf-buttons{
+  padding: 2px;
+  padding-inline: 2px;
+
+}
+
+.middle{
+  background-color: #24211a;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+}
+ .container {
+background-image: url(/static/css/wodden.jpg);
+/* background-color: antiquewhite; */
+background-size: cover;
+height: auto;
+overflow: hidden;
+min-height: 78vh;
+} 
+
+.left {
+float: left;
+}
+
+.right {
+ /* float: right; */
+ padding-left: 300px;
+}
+
+
+#pdf-list {
+  margin-top: 20px;
+  padding:
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6a00;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-left: 40px;
+  /* background-color: #1f241b; */
+  background-color: rgb(20, 23, 21,70%);
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+.button {
+  display: inline-block;
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.footer{
+background-color: #1f241b;
+margin-top: auto;
+}
+
+.f1{
+float: left;
+/* width: 50%; */
+
+}
+.f2{
+float: right;
+/* width: 50%; */
+/* padding-left: 256px; */
+}

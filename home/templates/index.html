@@ -1,0 +1,58 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage 1</title>
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+  </head>
+  <body>
+
+    <div class="fscr">
+      <!-- <img src="2.jpg" 
+     srcset="medium.jpg 1000w,
+             large.jpg 2000w"
+     alt="Image description"> -->
+
+    <section class="wrapper">
+      <p> <marquee >!! Welcome to Open Repository !!</marquee>  </p>
+       welcome {{request.user.username}}
+    </section>
+    <div class="w1-f">
+    <form method="post" action="{% url 'index1' %}">
+      {% comment %} {% url 'handle_form' %} {% endcomment %}
+      {% csrf_token %}
+
+      <label for="branch">Branch:</label>
+      <select id="branch" name="branch">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="ME">ME</option>
+        <option value="CE">CE</option>
+      </select>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester">
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+        <div class="btn">
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+  
+    <script>
+      {% comment %} const form = document.querySelector("form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // prevent form from submitting
+
+        const branch = document.querySelector("#branch").value;
+        const semester = document.querySelector("#semester").value;
+
+        // redirect to the second web page with query parameters
+        window.location.href = `/index1?branch=${branch}&semester=${semester}`; {% endcomment %}
+      {% comment %} }); {% endcomment %}
+    </script>
+  </body>
+</html>
